@@ -1,0 +1,53 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "vue application education repository.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production webpack",
+    "auto-dev-build": "NODE_ENV=development webpack --watch",
+    "dev-build": "NODE_ENV=development webpack",
+    "mock-start": "json-server src/mockapi/db.js",
+    "code-check": "eslint src/js/**/*.{js,vue}"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "css-loader": "^0.28.10",
+    "eslint": "^4.18.2",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^4.3.0",
+    "glob": "^7.1.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "vue-loader": "^14.2.1",
+    "vue-template-compiler": "^2.5.15",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.4",
+    "@fortawesome/fontawesome-free-solid": "^5.0.8",
+    "@fortawesome/vue-fontawesome": "0.0.22",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.0.0",
+    "bootstrap-vue": "^2.0.0-rc.2",
+    "jquery": "^3.3.1",
+    "jquery-ui-dist": "^1.12.1",
+    "popper.js": "^1.14.0",
+    "taggle": "^1.13.0",
+    "vue": "^2.5.15",
+    "vue-popperjs": "^1.2.6",
+    "vuex": "^3.0.1"
+  }
+}

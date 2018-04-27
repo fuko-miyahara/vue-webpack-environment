@@ -1,0 +1,52 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/base",
+        "plugin:vue/essential",
+        "plugin:vue/recommended",
+        "plugin:vue/strongly-recommended"
+    ],
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jquery": true
+    },
+    "plugins": [ "vue" ],
+    "rules": {
+        // インデントに混合スペースとタブを許可しない
+        "no-mixed-spaces-and-tabs": "error",
+        // 複数の空行を許可しない
+        "no-multiple-empty-lines": ["error", { "max": 1}],
+        // 変数は、Cammelcase,  例外として、定数(全て大文字)は、スネークケースOK.
+        "camelcase": "error",
+        // カンマの前後にスペースを強制
+        "comma-spacing": ["error", {"before": false, "after": true}],
+        // カンマは、行の最後につける
+        "comma-style": ["error", "last"],
+        // オブジェクトリテラル・プロパティのキーと値の間の間隔を強制します. コロンの前にスペース禁止、コロンの後にスペース入れること
+        "key-spacing": ["error", {"beforeColon": false, "afterColon": true}],
+        // 演算子の前にスペースを強制
+        "space-infix-ops": "error",
+        // マルチスペース禁止
+        "no-multi-spaces": "error",
+        // 変数名や関数名の重複禁止
+        "no-shadow": ["error", { "hoist": "all" }],
+        // 制御構文の一行でかくの禁止(省略記法禁止)
+        "curly": "error",
+        // 制御構文の 予約語の前にスペースを要求
+        "keyword-spacing": ["error", { "before": true , "after": true }],
+        // var の使用禁止. const, let を使用すること
+        "no-var": "error",
+
+        // マジックナンバー禁止
+        "no-magic-numbers": "warn",
+        // 複雑度 エラーにしなくても ネスト数が出るので便利
+        "complexity": ["warn", 3],
+        // console.log の出力
+        "no-console": "warn",
+        // ファイルの最後に空行を入れること.
+        "eol-last": "warn",
+        "no-undef": "warn"
+    }
+}
